@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+body{
+    min-height: 100vh;/*el contenedor tendra una mínima altura igual a la altura
+    de la ventana de visualización*/
+    font-family: "Lato", sans-serif;/*Fuente importada*/
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    
+}
+
+header{
+    background-image:url(bannerpag.jpg);
+    text-align: center;
+    padding: 60px; /*espacio antes del borde*/
+    color: white;
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    background-position:center;
+    grid-area: header;
+    
+}
+
+header div{
+    margin-left: 25%;
+}
+
+/*el valor 2.5em Indica que el tamaño de la fuente
+debe ser 2.5 veces del tamaño de la fuente del elemento padres por eso se coloca la unidad em*/
+header h1{
+    font-size: 2.5em;
+}
+
+header ul{
+    list-style: none;
+}
+
+header .nav li a{
+    background-color: rgb(17, 8, 15);
+    color: white;
+    text-decoration: none;
+    padding: 10px 25px;
+    display: block;
+
+}
+
+header .nav li a:hover{
+    background-color: #c70a0a;
+}
+
+header .nav >li{
+    float:left;
+}
+
+header .nav li ul{
+    display: none;
+    position: absolute;
+    min-width: 130px;
+    text-align: justify;
+}
+
+header .nav li:hover > ul{
+    display: block;
+}
+
+
+main{
+    background-color: ghostwhite;
+    
+}
+
+main section{
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(28, 14, 161, 0.486);
+    
+}
+
+main section article.articulo{
+    
+    padding: 10px 0px;
+     /*cualquier contenido que sobresalga de los 
+     limites del elemento se ocultar y no se mostrara*/
+    overflow: hidden;
+    
+}
+
+main section article.articulo h2{
+     /*color a los h2 que se encuentran en la clase articulo*/
+    /*background-color: rgb(17, 8, 15);*/
+    background-image: url(fondh2.jpg);
+    color: white;
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    background-position:center;
+    width: 40%;/*Ancho del color de 40%*/
+    min-width: 400px;/*Minima anchura del color de 400px*/
+    padding: 20px;/*Espacio del color de 20px*/
+    
+}
+
+.contenido{
+    /*espacios en las margenes arriba y abajo*/
+    padding: 10px 30px;
+    
+}
+
+main section article.articulo p{
+    /*separamos los parrafos*/
+    margin-top: 20px;
+    /*Altura de líneas*/
+    line-height: 25px;
+    padding-left:4px;
+}
+
+section article .ul{
+    /*separamos los parrafos*/
+    margin-top: 27px;
+    /*Altura de líneas*/
+    line-height: 25px;
+    padding-left:4px;
+}
+
+main section article.articulo img{
+    /*Tamaño de la imagen*/
+    width: 40%;
+    /*Tamaño maximo de la imagen*/
+    max-width: 200px;
+    /*Tamaño minimo de la imagen*/
+    min-width: 100px;
+    /*Margen de la imagen a la derecha*/
+    margin-right: 20px;
+    /*Coloca la imagen a la izquierda del texto*/
+    float: left;
+    border: 2px solid rebeccapurple;
+}
+
+main .info{
+    background-color:rgb(255, 255, 0);
+    text-align: center;
+    font-weight: bolder;
+}
+
+main .info p{
+    padding: 40px 20% 0;
+     /*Altura de líneas*/
+     line-height: 25px;
+}
+
+main .info img{
+    
+     /*Tamaño de la imagen*/
+     width: 20%;
+     /*Tamaño maximo de la imagen*/
+     max-width: 200px;
+     /*Tamaño minimo de la imagen*/
+     min-width: 150px;
+     margin-bottom: -30px;
+}
+
+section article table,th{
+    border:1px solid black;/* Estabkece un borde de 1 píxel de grosor con un estilo sólido y color negro a la tabla*/
+    text-align: center;/* alinea el texto al centro*/
+    border-collapse: collapse;/* EStablece que los bordes de las celdas de una tabla se combinen en un solo borde
+    en lugar de mostrarun borde separado por cada celda*/
+    
+}
+section article  table td{
+    border:1px solid black;/* Estabkece un borde de 1 píxel de grosor con un estilo sólido y color negro a la tabla*/
+    text-align: center;/* alinea el texto justificadamente*/
+    border-collapse: collapse;/* EStablece que los bordes de las celdas de una tabla se combinen en un solo borde
+    en lugar de mostrarun borde separado por cada celda*/
+}
+section article table .tcenter{/* Esta es la clase ue se aplicará para centrar la tabla en la página*/
+    margin-left: auto;/* Establece el margen izquierdo de la tabla y se calculara automáticamente en el navegador*/
+    margin-right: auto;/* Establece el margen derecho de la tabla y se calculara automáticamente en el navegador*/
+}
+section article table th{
+    background-color: #530646; /* Establce el color del fondo del encabezado de la tabla*/
+    color: white;
+}
+
+.formulario{
+    padding: 20px;
+    margin: 0 auto;
+    border: 1px solid;
+    max-width: 500px;
+    border-radius: 0.4rem;
+
+}
+
+::placeholder{
+    color: #8938f3;
+    font-size: 14px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px 0 5px;
+    font-weight: bold;
+    padding: auto;
+}
+
+input {
+    width: 90%;
+    padding: 20px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+   
+}
+
+input[type="submit"] {
+    background-color: #1b061a;
+    color: white;
+    cursor: pointer;
+    margin-left: 20px;
+    font-size: 20px;
+    
+}
+
+input[type="submit"]:hover {
+    background-color: #d81b1b;
+    
+}
+
+footer{
+    background-image:url(bannerpag.jpg);
+    text-align: center;
+    padding: 40px; /*espacio antes del borde*/
+    color: white;
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    background-position:center;
+}

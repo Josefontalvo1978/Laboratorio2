@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Mi Primer Sitio Web</title>
+</head>
+
+<body>
+    <header>
+        <h1>José Fontalvo De La Hoz</h1>
+        <h2>Ingeniería de Sistemas</h2>
+        <div>
+            <ul class="nav">
+                <li><a href="#perfil">Acerca de mi</a>
+                <ul>
+                    <li><a href="#estudios">Estudios</a></li>
+                    <li><a href="#experiencias">Experiencias Laborales</a></li>
+                </ul>
+                </li>
+                <li><a href="#pasatiempo">Pasatiempo</a></li>
+                <li><a href="#tareas">Tareas</a>
+                <ul>
+                    <li><a href="#horario">Horario</a></li>
+                </ul>
+                </li>
+                <li><a href="#contacto">Contactos</a>
+                    <ul>
+                        <li><a href="#formulario">Formulario</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+    
+    <main>
+        <section id="perfil" class="contenido">
+            <article class="articulo">
+                <h2><strong>Perfil Profesional</strong></h2>
+                <img src="img/pers.svg" alt="foto de perfil">
+                <p>
+                    Ingeniero de sistemas egresado de la Universidad Simón Bolívar con Diplomado en Redes de
+                    computadores, capacitado para ejercer la profesión en base a los pilares fundamentales de calidad:
+                    eficiencia y eficacia.<br>
+                    La ingeniería a creado en mi un espíritu investigativo en base a la ingeniería moderna dándole un
+                    manejo integral y eficiente a los sistemas que soportan, producen y administran la informática del
+                    nuevo milenio.
+                </p>
+            </article>
+        </section>
+        <section id="estudios" class="contenido">
+            <article class="articulo">
+                <h2><strong>Estudios Realizados</strong></h2>
+                <img src="img/estudios.svg" alt="Estudios realizados">
+                <p><strong>Universitarios:</strong> Universidad Simón Bolívar</p>
+                <p><strong>Titulo Obtenido:</strong> Ingeniero de sistemas</p>
+                <p><strong>Diplomado:</strong>Redes de computadores</p>
+                <p><strong>Titulo Obtenido:</strong> Ingeniero de sistemas</p>
+            </article>
+        </section>
+
+        <section id="experiencias" class="contenido">
+            <article class="articulo">
+                <h2><strong>Experiencia Laboral</strong></h2>
+                <img src="img/trabajo.svg" alt="Experiencia laboral">
+                <p><strong>Nombre de la empresa:</strong> Funetec</p>
+                <p><strong>Nombre del cargo:</strong> Docente de informática</p>
+            </article>
+        </section>
+        <section id="pasatiempo" class="contenido">
+            <article class="articulo">
+                <h2><strong>Pasatiempo</strong></h2>
+                <img src="img/hobby.svg" alt="Pasatiempo">
+                <ul class="ul">
+                    <li>Practicar programación</li>
+                    <li>Jugar Futbol</li>
+                    <li>Ver peliculas</li>
+                </ul>
+            </article>
+        </section>
+        <section id="tareas" class="contenido">
+            <article class="articulo">
+                <h2><strong>Tareas</strong></h2>
+                <img src="img/tareas.svg" alt="tareas">
+                <ol>
+                    <li>Pasear al perro</li>
+                    <li>Practicar las clases de programación</li>
+                    <li>Trabajar</li>
+                    <li>Curso de programación Básica</li>
+                </ol>
+            </article>
+        </section>
+        <section id="horario" class="contenido">
+            <article class="articulo">
+                <h2><strong>Horario</strong></h2>
+                <img src="img/calendario.svg" alt="calendario">
+                <div class="contenido">
+                    <table style="width: 80%" class="tcenter">
+                        <thead>
+                            <tr>
+                                <th colspan="7">Horario</th>
+                            </tr>
+                            <tr>
+                                <th>Lunes</th>
+                                <th>Martes</th>
+                                <th>Miercoles</th>
+                                <th>Jueves</th>
+                                <th>Viernes</th>
+                                <th>Sabado</th>
+                                <th>Domingo</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Pasear al perro</td>
+                                <td>Pasear al perro</td>
+                                <td>Pasear al perro</td>
+                                <td>Pasear al perro</td>
+                                <td>Pasear al perro</td>
+                                <td>Pasear al perro</td>
+                                <td>Pasear al perro</td>
+                            </tr>
+                            <tr>
+                                <td>Trabajar</td>
+                                <td>Practicar las clases de programación</td>
+                                <td>Trabajar</td>
+                                <td>Practicar las clases de programación</td>
+                                <td>Trabajar</td>
+                                <td>Practicar las clases de programación</td>
+                                <td>Practicar las clases de programación</td>
+                            </tr>
+                            <tr>
+                                <td>Curso de programación Básica</td>
+                                <td>Curso de programación Básica</td>
+                                <td>Curso de programación Básica</td>
+                                <td>Curso de programación Básica</td>
+                                <td>Curso de programación Básica</td>
+                                <td>Practicar las clases de programación</td>
+                                <td>Practicar las clases de programación</td>
+                            </tr>
+                        </tbody>
+                    </table>
+            </div>
+            </article>
+        </section>
+        <section id="formulario" class="contenido">
+            <article class="articulo">
+                <h2><strong>Formulario</strong></h2>
+                <div class="formulario">
+                    <form  id="miformulario">
+                        <p> <span style="color: red;"><b>(*) Campos obligatorios</b></span></p>
+                        <label for="nombre">Nombre (*):</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre completo (En letras)">
+                        <label for="motivo">Motivo (*):</label>
+                        <input type="text" id="motivo" name="motivo" placeholder="Ingrese el motivo">
+                        <label for="email">Correo Electrónico (*):</label>
+                        <input type="email" id="email" name="email" placeholder="Ingrese su correo">
+                        <input type="submit" value="Enviar">
+                        
+                    </form>
+                    <p id="mensaje"></p>
+                    <script src="javas/validar.js"></script> 
+                </div>
+               
+            </article>
+        </section>
+        <section id="contacto" class="contenido">
+            <article class="articulo">
+                <h2><strong>Contactos</strong></h2>
+                <img src="img/contactos.svg" alt="calendario">
+                <p>Email: <a href="mailto:santiagosuarez1802@gmail.com">josemariafontalvo@hotmail.com</a></p>
+                <p>Teléfono: +57 3017855255</p>
+                <p>Instagram: <a href="https://www.instagram.com/josemf01031978/">https://www.instagram.com/josemf01031978/</a></p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        Derechos Reservados &copy; 2025
+    </footer>
+    
+</body>
+
+</html>
